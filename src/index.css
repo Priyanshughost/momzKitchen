@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    /* Warm Cream Background */
+    --background: 36 60% 97%;
+    /* Deep Cocoa Foreground */
+    --foreground: 14 33% 15%;
+    
+    /* Slightly darker cream for cards */
+    --card: 36 40% 95%;
+    --card-foreground: 14 33% 15%;
+    
+    --popover: 36 60% 97%;
+    --popover-foreground: 14 33% 15%;
+    
+    /* Cocoa Brown Primary */
+    --primary: 14 33% 28%;
+    --primary-foreground: 36 60% 97%;
+    
+    /* Soft Rose Secondary */
+    --secondary: 353 45% 78%;
+    --secondary-foreground: 14 33% 15%;
+    
+    /* Muted tones */
+    --muted: 30 20% 90%;
+    --muted-foreground: 14 15% 40%;
+    
+    /* Honey Gold Accent */
+    --accent: 35 70% 60%;
+    --accent-foreground: 14 33% 15%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 14 20% 85%;
+    --input: 14 20% 85%;
+    --ring: 14 33% 28%;
+    
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 14 33% 10%;
+    --foreground: 36 60% 90%;
+    --card: 14 30% 13%;
+    --card-foreground: 36 60% 90%;
+    --popover: 14 33% 10%;
+    --popover-foreground: 36 60% 90%;
+    --primary: 36 60% 85%;
+    --primary-foreground: 14 33% 15%;
+    --secondary: 353 30% 25%;
+    --secondary-foreground: 36 60% 90%;
+    --muted: 14 20% 18%;
+    --muted-foreground: 36 20% 70%;
+    --accent: 35 50% 50%;
+    --accent-foreground: 36 60% 90%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 14 20% 20%;
+    --input: 14 20% 20%;
+    --ring: 36 60% 85%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
