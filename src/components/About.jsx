@@ -13,10 +13,10 @@ const About = () => {
 
   // Parallax transforms
   // Image moves slightly opposite to scroll to create floating effect
-  const imageY = useTransform(scrollYProgress, [0, 1], [100, -100]);
+  const imageY = useTransform(scrollYProgress, [0, 1], [200, -200]);
   
   // Decorative blob moves faster for depth
-  const blobY = useTransform(scrollYProgress, [0, 1], [-100, 100]);
+  const blobY = useTransform(scrollYProgress, [0, 1], [-200, 200]);
 
   return (
     <section ref={containerRef} id="about" className="py-24 bg-background relative overflow-hidden">
