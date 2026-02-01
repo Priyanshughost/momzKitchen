@@ -123,7 +123,7 @@ function App() {
         smoothWheel: true,
         wheelMultiplier: 0.9,
         smoothTouch: true,
-        touchMultiplier: 1,
+        touchMultiplier:0.8 
       }}
     >
       <div className="min-h-screen bg-background font-sans selection:bg-secondary selection:text-secondary-foreground">
